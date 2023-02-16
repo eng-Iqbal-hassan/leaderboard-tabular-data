@@ -77,13 +77,30 @@ h1 span {
   }
 }
 
+.table-wrapper {
+  margin: 0 23.125rem;
+}
+@media screen and (max-width: 1440px) {
+  .table-wrapper {
+    margin: 0 11.25rem;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .table-wrapper {
+    margin: 0 10.4375rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .table-wrapper {
+    margin: 0 4.375rem;
+  }
+}
 @media screen and (max-width: 575px) {
   .table-wrapper {
     height: auto;
-    max-width: 31.5625rem;
-    margin: 0 2.1875rem;
     overflow-x: auto;
     white-space: nowrap;
+    margin: 0 2.1875rem;
   }
 }
 @media screen and (max-width: 375px) {
@@ -151,49 +168,39 @@ h1 span {
 }
 .table-wrapper .table .table-head {
   background-color: #161616;
+  width: 100%;
 }
 .table-wrapper .table .table-head .table-row {
   display: flex;
   background-color: #1B1B1B;
   padding: 1.0625rem 3.625rem 1rem 3rem;
   margin-bottom: 1.875rem;
-  width: 57.8125rem;
-}
-@media screen and (max-width: 1440px) {
-  .table-wrapper .table .table-head .table-row {
-    width: 53.125rem;
-  }
 }
 @media screen and (max-width: 1280px) {
   .table-wrapper .table .table-head .table-row {
-    width: 46.0625rem;
     padding: 0.8125rem 2.0625rem;
     margin-bottom: 1.3125rem;
   }
 }
 @media screen and (max-width: 1024px) {
   .table-wrapper .table .table-head .table-row {
-    width: 43.625rem;
     padding: 0.9375rem 2.3125rem;
     margin-bottom: 1rem;
   }
 }
 @media screen and (max-width: 991px) {
   .table-wrapper .table .table-head .table-row {
-    width: 41.625rem;
     padding: 0.9375rem 2.0625rem;
   }
 }
 @media screen and (max-width: 768px) {
   .table-wrapper .table .table-head .table-row {
-    width: 31.4375rem;
     padding: 0.75rem 1.5625rem;
     margin-bottom: 0.75rem;
   }
 }
 @media screen and (max-width: 575px) {
   .table-wrapper .table .table-head .table-row {
-    width: 37.75rem;
     padding: 0.8125rem 1.875rem;
   }
 }
@@ -240,6 +247,7 @@ h1 span {
 .table-wrapper .table .table-body {
   background-color: #161616;
   padding-bottom: 2.375rem;
+  width: 100%;
 }
 @media screen and (max-width: 575px) {
   .table-wrapper .table .table-body {

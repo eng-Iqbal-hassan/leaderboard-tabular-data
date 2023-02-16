@@ -42,7 +42,7 @@ h1 {
         font-size: 1.75rem;
         margin: 2.5rem 0 1.5rem;
     }
-    @media screen and (max-width:375px) {
+    @media screen and (max-width: 375px) {
         max-width: 12.1875rem;
         font-size: 2rem;
         padding: 1.5rem 0 1rem;
@@ -50,22 +50,31 @@ h1 {
     }
 }
 .table-wrapper {
-    @media screen and (max-width:575px) {
-        height: auto;
-        max-width: 31.5625rem;
-        margin: 0 2.1875rem;
-        overflow-x: auto;
-        white-space: nowrap;
-    }
-    @media screen and (max-width: 375px) {
-        margin: 0 1rem;
-    }
+    margin: 0 23.125rem;
+        @media screen and (max-width: 1440px) {
+            margin: 0 11.25rem;
+        }
+        @media screen and (max-width: 1280px) {
+            margin: 0 10.4375rem;
+        }
+        @media screen and (max-width: 1024px) {
+            margin: 0 4.375rem;
+        }
+        @media screen and (max-width: 575px) {
+            height: auto;
+            overflow-x: auto;
+            white-space: nowrap;
+            margin: 0 2.1875rem;
+        }
+        @media screen and (max-width: 375px) {
+            margin: 0 1rem;
+        }
     .table {
         display: flex;
         flex-direction: column;
         align-items: center;
         @media screen and (max-width: 575px) {
-            display: inline-block;
+            display: inline-block;     
         }
         .table-cell {
             &:first-child {
@@ -107,36 +116,28 @@ h1 {
         }
         .table-head {
             background-color: $bg-primary;
+            width: 100%;
             .table-row {
                 display: flex;
                 background-color: $bg-secondary;
                 padding: 1.0625rem 3.625rem 1rem 3rem;
                 margin-bottom: 1.875rem;
-                width: 57.8125rem;
-                @media screen and (max-width: 1440px) {
-                    width: 53.125rem;
-                }
                 @media screen and (max-width: 1280px) {
-                    width: 46.0625rem;
                     padding: .8125rem 2.0625rem;
                     margin-bottom: 1.3125rem;
                 }
                 @media screen and (max-width: 1024px) {
-                    width: 43.625rem;
                     padding: .9375rem 2.3125rem;
                     margin-bottom: 1rem;
                 }
                 @media screen and (max-width: 991px) {
-                    width: 41.625rem;
                     padding: .9375rem 2.0625rem;
                 }
                 @media screen and (max-width: 768px) {
-                    width: 31.4375rem;
                     padding: .75rem 1.5625rem;
                     margin-bottom: .75rem;
                 }
                 @media screen and (max-width: 575px) {
-                    width: 37.75rem;
                     padding: .8125rem 1.875rem;
                 }
                 @media screen and (max-width: 480px) {
@@ -170,6 +171,7 @@ h1 {
         .table-body {
             background-color: $bg-primary;
             padding-bottom: 2.375rem;
+            width: 100%;
             @media screen and (max-width: 575px) {
                 padding-bottom: 1.0625rem;
             }
