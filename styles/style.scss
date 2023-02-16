@@ -140,6 +140,9 @@ h1 {
                 .table-head-cell {
                     font-size: 1.5rem;
                     font-weight: 700;
+                    &:first-child {
+                        text-align: center;
+                    }
                     @media screen and (max-width: 1280px) {
                         font-size: 1.25rem;
                     }

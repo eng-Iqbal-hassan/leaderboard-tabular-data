@@ -212,6 +212,9 @@ h1 span {
   font-size: 1.5rem;
   font-weight: 700;
 }
+.table-wrapper .table .table-head .table-row .table-head-cell:first-child, .table-wrapper .table .table-head .table-body .table-row .table-body-cell:first-child, .table-wrapper .table .table-body .table-head .table-row .table-body-cell:first-child {
+  text-align: center;
+}
 @media screen and (max-width: 1280px) {
   .table-wrapper .table .table-head .table-row .table-head-cell, .table-wrapper .table .table-head .table-body .table-row .table-body-cell, .table-wrapper .table .table-body .table-head .table-row .table-body-cell {
     font-size: 1.25rem;
